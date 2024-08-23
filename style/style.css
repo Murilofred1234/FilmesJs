@@ -1,0 +1,101 @@
+@import url(reset.css);
+
+:root{
+    --corPrincipal: #17162E;
+    --branco: #ffffff;
+    --fonteLetra: 'Kumbh Sans';
+    --fundoTitulo: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --fundoFilmes: #1D1C3B;
+    --descricaoFilme: #ACACAC;
+}
+
+body{
+    width: 100%;
+    background-color: var(--corPrincipal);
+    color: var(--branco);
+    font-family: var(--fonteLetra);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.container__titulo{
+    font-size: 36px;
+    margin: 5rem 1rem 3rem 0rem;
+}
+.container_barraPesquisa {
+    width: 45%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+.container__pesquisa{
+    background-color: transparent;
+    border: 0px;
+    width: 100%;
+}
+
+.container__pesquisa::placeholder{
+    color: #8A8A8A;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.filmes{
+    background-color: var(--fundoFilmes);
+    width: 86%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+    border-radius: 8px;
+}
+.filmes__propriedades{
+    width: 50%;
+    margin: 0 0 0 3rem;
+}
+
+.filmes__propriedades-fav{
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.filme-texto{
+    max-width: 50%;
+    margin-right: 3%; 
+    line-height: 2;
+    color: var(--descricaoFilme);
+}
+
+.titulo-filme{
+    margin: 0 0 20px 0 ;
+}
+
+.imagem-filme{
+    width: 139px;
+    height: 139px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 50%
+}
+
+.nota{
+    margin: 0 50px 0 5px;
+}
+
+.favoritar{
+    margin: 0px 5px;
+}
